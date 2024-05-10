@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="fav.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' href='index.css'>
+
+    <link id='theme-style' rel='stylesheet' type='text/css' href=''>
+</head>
+<body>
+    <section class="s1">
+        <div class='main-container'>
+            <div class="greeting-wrapper">
+                <h1>Hello</h1>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class='dots-wrapper'>
+                    
+                    </div>
+                    <ul id='navigation'>
+                        <li><a target="_blank" href="https://linkedin.com/in/simarjeetss529">Contact</a></li>
+                        <li><a href="coursework.html">Coursework</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    <img id='profile_pic' src="assets/pfp.jpeg ">
+                    <h5 id="theme-text" style="text-align:center; line-height: 0;">Themes</h5>
+                    <div id="theme-options-wrapper">
+
+                        <div data-mode='light' id='light-mode' class='theme-dot' onclick='toggleDarkMode()'></div>
+                        <div data-mode='blue' id='blue-mode' class='theme-dot' onclick='toggleDarkMode()'></div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id='preview'>
+                            <div id='corner-tl' class="corner"></div>
+                            <div id='corner-tr' class="corner"></div>
+                            <h3>ME:</h3>
+                            <p>computer science student <br> in a <strong>war</strong> with my laptop </p>
+                            <p>Hi I am Simarjeet Singh and I am a computer science student at WSU and this is my first semester</p>
+                             
+                            <div id='corner-br' class="corner"></div>
+                            <div id='corner-bl' class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class='main-container'>
+
+            <div class='about-wrapper'>
+                <div class='about-me'>
+                    <h4>ABOUT ME</h4>
+
+                    <p> I am a current Masters student in <strong>Computer Science</strong> at Washington State University , prior to this I completed my bachelors in <strong>Computer Science</strong> as well. 
+                        <br> 
+                        <br> 
+                        Besides this, I am also passionate about <strong>music</strong> and enjoy playing various musical instruments. In my free time, I love creating music and exploring the world of sound.                      
+                    </p>
+                
+
+                    <hr>
+
+                    <h4>Technical Skills</h4>
+                    <p>Aspiring Software Developer with primary skills in Java, C# and Git: <a target="_blank" href="Resume.pdf">Download Resume</a></p>
+                    <div id='skills'>
+                        <ul>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>SQL</li>
+                            <li>.NET Core</li>
+                            
+                        </ul>
+                        <ul>
+                            <li>REST APIs</li>
+                            <li>Azure</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class='social-links'>
+                    <h3>Find me on LinkedIn and Github</h3>
+                    <a target="_blank" href="https://linkedin.com/in/simarjeetss529">LinkedIn: Simarjeet Singh</a><br>
+                    <a target="_blank" href="https://github.com/simarjeetss">Github: @simarjeetss</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+                Email.send({
+                Host : "smtp.gmail.com",
+                Username : "root",
+                Password : "root",
+                To : 'simarjeet.singh@wsu.edu',
+                From : document.getElementById('emailid').value,
+                Subject : document.getElementById('subjecta').value,
+                Body : document.getElementById('messagea').value
+            }).then(
+            message => alert('Message Sent Successfully')
+            );
+        }
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+
+    
+
+
+</body>
+</html>
