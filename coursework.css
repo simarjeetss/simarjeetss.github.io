@@ -43,6 +43,7 @@
 .course-details.active {
     display: block;
 }
+
 /* Back to Home button styles */
 .back-to-home {
     position: fixed;
@@ -59,4 +60,15 @@
 
 .back-to-home:hover {
     background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height */
+        position: relative; /* Change position */
+    }
+    .content {
+        margin-left: 0; /* Remove margin */
+    }
 }
