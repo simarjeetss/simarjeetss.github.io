@@ -63,8 +63,8 @@ main {
 /* Back to Home button styles */
 header button {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
+    background-color: #56e9f9;
+    color: #010101;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;

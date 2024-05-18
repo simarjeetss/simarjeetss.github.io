@@ -206,7 +206,7 @@ h6 { font-size: 16px;}
     display: grid;
     align-content: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
 }
 
 #preview-shadow{
@@ -374,5 +374,10 @@ h6 { font-size: 16px;}
     }
     .right-column{
         justify-content: center;
+
     }
+    .s1{
+        padding-bottom: 50px;
+    }
+
 }
