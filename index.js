@@ -1,22 +1,4 @@
-
-
-function sendEmail(){
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "root",
-    Password : "root",
-    To : 'simarjeet.singh@wsu.edu',
-    From : document.getElementById('emailid').value,
-    Subject : document.getElementById('subjecta').value,
-    Body : document.getElementById('messagea').value
-    }).then(
-    message => alert('Message Sent Successfully')
-    );
-}
-
-
-console.log('finally it is working ');
-
+// Theme management
 let theme = localStorage.getItem('theme')
 
 if (theme == null) {
@@ -47,34 +29,22 @@ function setTheme(mode) {
     localStorage.setItem('theme', mode)
 }
 
-function toggleDarkMode() {
-    var darkModeDot = document.getElementById('light-mode');
-    var lightModeDot = document.getElementById('blue-mode');
-    var themeText = document.getElementById('theme-text');
-
-    if (darkModeDot.getAttribute('data-mode') === 'light') {
-        darkModeDot.setAttribute('data-mode', 'dark');
-        lightModeDot.setAttribute('data-mode', 'dark');
-        themeText.textContent = "told you right";
-        document.getElementById('theme-style').href = 'blue.css';
-    } else {
-        darkModeDot.setAttribute('data-mode', 'light');
-        lightModeDot.setAttribute('data-mode', 'light');
-        themeText.textContent = "dark theme is better!";
-        document.getElementById('theme-style').href = 'index.css';
-    }
-}
-
+// Email functionality
 function sendEmail(){
     Email.send({
-    Host : "smtp.gmail.com",
-    Username : "root",
-    Password : "root",
-    To : 'simarjeet.singh@wsu.edu',
-    From : document.getElementById('emailid').value,
-    Subject : document.getElementById('subjecta').value,
-    Body : document.getElementById('messagea').value
+        Host : "smtp.gmail.com",
+        Username : "simarjeetss529@gmail.com",
+        Password : "",
+        To : 'simarjeet.singh@wsu.edu',
+        From : document.getElementById('emailid').value,
+        Subject : document.getElementById('subjecta').value,
+        Body : document.getElementById('messagea').value
     }).then(
-    message => alert('Message Sent Successfully')
+        message => {
+            alert('Message Sent Successfully')
+            document.getElementById('contact-form').reset()
+        }
     );
 }
+
+console.log('Website loaded successfully! 🚀')
