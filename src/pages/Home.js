@@ -30,7 +30,7 @@ const Home = () => {
             <p className="mb-6">
               Outside of programming, I enjoy music production and creating beats. 
               I love experimenting with different genres and sounds. Also, in case you are interested, 
-              here are my <a href="/assets/resume_SimarjeetSingh_March.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-hover">resume</a> and <a href="/about" className="text-accent hover:text-accent-hover">more about me</a>.
+              here is my <a href="https://shorturl.at/r7Vwv" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-hover">resume</a> and <a href="/about" className="text-accent hover:text-accent-hover">more about me</a>.
             </p>
             
             <p className="mb-6">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <main className="mt-15">
+    <main className="mt-20">
       <div className="max-w-4xl mx-auto px-8">
         <section className="py-8">
           <h2 className="text-4xl font-bold mb-8">About</h2>
@@ -11,7 +11,7 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-text">Education</h3>
               <div className="flex items-center gap-4 p-4 border border-border rounded-lg">
-                <img src="/assets/uni.jpeg" alt="Washington State University" className="w-15 h-15 rounded-lg object-cover" />
+                {/* <img src="/assets/uni.jpeg" alt="Washington State University" className="w-15 h-15 rounded-lg object-cover" /> */}
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Washington State University</h4>
                   <p className="text-sm text-text-secondary">Masters in Computer Science</p>
