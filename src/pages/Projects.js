@@ -52,6 +52,23 @@ const Projects = () => {
     }
   ];
 
+  const getBadge = (projectId) => {
+    if (projectId === 1) {
+      return (
+        <span className="inline-flex items-center px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-xs font-medium rounded-full border border-gray-300 dark:border-gray-600">
+          🏆 Hackathon Winner
+        </span>
+      );
+    } else if (projectId === 2) {
+      return (
+        <span className="inline-flex items-center px-3 py-1 bg-blue-600 dark:bg-blue-400 text-white dark:text-black text-xs font-medium rounded-full border border-gray-300 dark:border-gray-600">
+          🎖️ Honorable Mention
+        </span>
+      );
+    }
+    return null;
+  };
+
   return (
     <main className="mt-20">
       <div className="max-w-4xl mx-auto px-8">
@@ -60,11 +77,9 @@ const Projects = () => {
             {projects.map((project) => (
               <div key={project.id} className="border border-border rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <div className="p-6">
-                  {(project.id === 1 || project.id === 2) && (
+                  {getBadge(project.id) && (
                     <div className="mb-4">
-                      <span className="inline-flex items-center px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-xs font-medium rounded-full border border-gray-300 dark:border-gray-600">
-                        🏆 Hackathon Winner
-                      </span>
+                      {getBadge(project.id)}
                     </div>
                   )}
                   <h3 className="text-xl font-semibold mb-4 text-text">{project.title}</h3>
