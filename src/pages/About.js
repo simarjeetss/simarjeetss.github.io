@@ -11,14 +11,22 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-text">Education</h3>
               <div className="flex items-center gap-4 p-4 border border-border rounded-lg">
-                {/* <img src="/assets/uni.jpeg" alt="Washington State University" className="w-15 h-15 rounded-lg object-cover" /> */}
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Washington State University</h4>
                   <p className="text-sm text-text-secondary">Masters in Computer Science</p>
-                  <p className="text-sm text-text-secondary">2023 - Present</p>
+                  <p className="text-sm text-text-secondary">Jan 2024 - May 2025</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 p-4 border border-border rounded-lg mt-8">
+                <div>
+                  <h4 className="text-lg font-semibold mb-1">JECRC University</h4>
+                  <p className="text-sm text-text-secondary">Bachelors in Computer Science</p>
+                  <p className="text-sm text-text-secondary">Aug 2019 - May 2023</p>
                 </div>
               </div>
             </div>
+
+            
 
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-text">Skills</h3>
