@@ -62,7 +62,7 @@ const Projects = () => {
     } else if (projectId === 2) {
       return (
         <span className="inline-flex items-center px-3 py-1 bg-blue-600 dark:bg-blue-400 text-white dark:text-black text-xs font-medium rounded-full border border-gray-300 dark:border-gray-600">
-          🎖️ Honorable Mention
+          🏆 Hackathon Winner
         </span>
       );
     }
