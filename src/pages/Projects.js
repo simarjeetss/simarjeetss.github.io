@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Projects = () => {
+  // Typewriter effect for current project
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "Currently building RAAY";
+  const idx = useRef(0);
+
+  useEffect(() => {
+    setDisplayedText("");
+    idx.current = 0;
+    const interval = setInterval(() => {
+      if (idx.current < fullText.length) {
+        setDisplayedText(fullText.substring(0, idx.current + 1));
+        idx.current++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 120);
+    return () => clearInterval(interval);
+  }, []);
+
   const projects = [
     {
       id: 1,
@@ -65,26 +84,60 @@ const Projects = () => {
 
   return (
     <main className="mt-20">
-      <div className="max-w-4xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
         <section className="py-8">
-          <div className="grid grid-cols-1 gap-8">
-            {projects.map((project) => (
-              <div key={project.id} className="border border-border rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                <div className="p-6">
-                  {getBadge(project.id) && (
-                    <div className="mb-4">
-                      {getBadge(project.id)}
-                    </div>
-                  )}
-                  <h3 className="text-xl font-semibold mb-4 text-text">{project.title}</h3>
-                  <p className="text-text-secondary mb-6 leading-relaxed">{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
-                    View Project →
-                  </a>
-                </div>
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            {/* Current Project Highlight */}
+            <div className="w-full md:w-1/3 flex-shrink-0 flex justify-center md:justify-start">
+              <div className="relative bg-bg border-4 border-accent rounded-xl shadow-lg p-8 flex flex-col items-center animate-glow w-full">
+                <h2 className="text-xl md:text-xl font-extrabold text-text mb-2 flex items-center">
+                  <span className="typewriter-cursor">{displayedText}</span>
+                </h2>
+                <p className="text-text-secondary text-center max-w-md">Check it out <a href='https://raay.dev' target='blank'>here</a></p>
               </div>
-            ))}
+            </div>
+            {/* Project List */}
+            <div className="w-full md:w-2/3">
+              <div className="grid grid-cols-1 gap-8">
+                {projects.map((project) => (
+                  <div key={project.id} className="border border-border rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <div className="p-6">
+                      {getBadge(project.id) && (
+                        <div className="mb-4">
+                          {getBadge(project.id)}
+                        </div>
+                      )}
+                      <h3 className="text-xl font-semibold mb-4 text-text">{project.title}</h3>
+                      <p className="text-text-secondary mb-6 leading-relaxed">{project.description}</p>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
+                        View Project →
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
+          <style>{`
+            .animate-glow {
+              box-shadow: 0 0 16px 2px var(--accent), 0 0 32px 4px var(--accent-hover);
+              animation: glowPulse 2s infinite alternate;
+            }
+            @keyframes glowPulse {
+              0% { box-shadow: 0 0 16px 2px var(--accent), 0 0 32px 4px var(--accent-hover); }
+              100% { box-shadow: 0 0 32px 8px var(--accent), 0 0 48px 12px var(--accent-hover); }
+            }
+            .typewriter-cursor::after {
+              content: '|';
+              animation: blink 1s steps(1) infinite;
+              color: var(--accent-hover);
+              margin-left: 2px;
+            }
+            @keyframes blink {
+              0%, 50% { opacity: 1; }
+              51%, 100% { opacity: 0; }
+            }
+          `}</style>
         </section>
       </div>
     </main>
