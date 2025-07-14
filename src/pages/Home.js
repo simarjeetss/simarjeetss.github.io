@@ -5,7 +5,7 @@ const Home = () => {
     <main className="mt-20">
       <div className="max-w-4xl mx-auto px-8">
         <section className="py-16">
-          <h1 className="font-monotext-5xl font-extrabold mb-14 leading-tight text-4xl">Simarjeet Singh</h1>
+          <h1 className="font-monotext-5xl font-extrabold mb-14 leading-tight text-4xl">hi i am simarjeet singh 👋</h1>
           <p className="text-xl text-text-secondary mb-8 font-medium">Hey! I'm a Computer Science graduate student passionate about software development and music production.</p>
           
           <div className="text-lg leading-relaxed">
@@ -14,12 +14,6 @@ const Home = () => {
               with a focus on backend development and cloud technologies. When I'm not coding, 
               you'll find me creating Rap/Trap/RnB beats and exploring new musical horizons.
             </p>
-            
-            {/* <p className="mb-6">
-              Working on backend development and cloud technologies<br />
-              Creator of FlavorBlend, Spotify Analysis, Bullet Hell Game<br />
-              Skills in Java, Spring Boot, Python, C#, .NET, Azure, GCP
-            </p> */}
             
             <p className="mb-6">
               Dreaming up cool ideas and making them come true is where my passion lies. 

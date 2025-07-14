@@ -109,9 +109,21 @@ const Projects = () => {
                       )}
                       <h3 className="text-xl font-semibold mb-4 text-text">{project.title}</h3>
                       <p className="text-text-secondary mb-6 leading-relaxed">{project.description}</p>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
-                        View Project →
-                      </a>
+                      <div className="flex gap-4 items-center">
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-accent font-medium hover:text-accent-hover transition-colors duration-200">
+                          view project →
+                        </a>
+                        {project.id === 1 && (
+                          <a
+                            href="https://flavorblend.tech/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent font-medium hover:text-accent-hover transition-colors duration-200"
+                          >
+                            see project →
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -120,7 +132,7 @@ const Projects = () => {
           </div>
           <style>{`
             .animate-glow {
-              box-shadow: 0 0 16px 2px var(--accent), 0 0 32px 4px var(--accent-hover);
+              box-shadow: 0 0 16px 2px var(--accent), 0 0 8px 4px var(--accent-hover);
               animation: glowPulse 2s infinite alternate;
             }
             @keyframes glowPulse {

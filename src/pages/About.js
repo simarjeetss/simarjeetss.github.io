@@ -13,7 +13,7 @@ const About = () => {
               <div className="flex items-center gap-4 p-4 border border-border rounded-lg">
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Washington State University</h4>
-                  <p className="text-sm text-text-secondary">Masters in Computer Science</p>
+                  <p className="text-sm text-text-secondary">Masters in Computer Science, AI/ML Specialization</p>
                   <p className="text-sm text-text-secondary">Jan 2024 - May 2025</p>
                 </div>
               </div>
@@ -36,9 +36,7 @@ const About = () => {
                   <ul className="space-y-1">
                     <li className="text-text-secondary text-sm">Java</li>
                     <li className="text-text-secondary text-sm">Python</li>
-                    <li className="text-text-secondary text-sm">C#</li>
-                    <li className="text-text-secondary text-sm">JavaScript</li>
-                    <li className="text-text-secondary text-sm">R</li>
+                    <li className="text-text-secondary text-sm">JavaScript/TypeScript</li>
                   </ul>
                 </div>
                 
@@ -46,10 +44,9 @@ const About = () => {
                   <h4 className="text-lg font-semibold mb-4 text-accent">Frameworks & Technologies</h4>
                   <ul className="space-y-1">
                     <li className="text-text-secondary text-sm">Spring Boot</li>
-                    <li className="text-text-secondary text-sm">.NET Core</li>
                     <li className="text-text-secondary text-sm">React</li>
                     <li className="text-text-secondary text-sm">Node.js</li>
-                    <li className="text-text-secondary text-sm">LibGDX</li>
+                    <li className="text-text-secondary text-sm">FastAPI</li>
                   </ul>
                 </div>
                 
@@ -66,13 +63,7 @@ const About = () => {
                 
                 <div className="p-6 border border-border rounded-lg bg-white bg-opacity-5">
                   <h4 className="text-lg font-semibold mb-4 text-accent">Tools & Libraries</h4>
-                  <ul className="space-y-1">
-                    <li className="text-text-secondary text-sm">OpenCV</li>
-                    <li className="text-text-secondary text-sm">dlib</li>
-                    <li className="text-text-secondary text-sm">Pandas</li>
-                    <li className="text-text-secondary text-sm">NumPy</li>
-                    <li className="text-text-secondary text-sm">Matplotlib</li>
-                  </ul>
+                  <p>currently going deep in machine learning/deep learning and LLMs</p>
                 </div>
               </div>
             </div>
