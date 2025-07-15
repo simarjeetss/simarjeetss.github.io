@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const Projects = () => {
   // Typewriter effect for current project
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Currently building RAAY";
+  const fullText = "currently building RAAY";
   const idx = useRef(0);
 
   useEffect(() => {

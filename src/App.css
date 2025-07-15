@@ -76,3 +76,15 @@ h6 { font-size: 1rem; }
   --accent: #60a5fa;
   --accent-hover: #3b82f6;
 }
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 16px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style for images is inline in Photos.js, but you can move it here if you prefer */
