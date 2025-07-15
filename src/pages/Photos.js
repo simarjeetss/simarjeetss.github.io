@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import photo1 from '../assets/pics/1.jpg'
-import photo2 from '../assets/pics/2.jpg'
-import photo3 from '../assets/pics/3.jpg'
-import photo4 from '../assets/pics/4.jpg'
-import photo5 from '../assets/pics/5.jpg'
-import photo6 from '../assets/pics/6.jpg'
-import photo7 from '../assets/pics/7.jpg'
-import photo8 from '../assets/pics/8.jpg'
-import photo9 from '../assets/pics/9.jpg'
-import photo10 from '../assets/pics/10.jpg'
-import photo11 from '../assets/pics/11.jpg'
 
-//not the best way but it works
-const images = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11];
+// Use public folder paths for images
+const images = [
+  '/assets/pics/1.jpg',
+  '/assets/pics/2.jpg',
+  '/assets/pics/3.jpg',
+  '/assets/pics/4.jpg',
+  '/assets/pics/5.jpg',
+  '/assets/pics/6.jpg',
+  '/assets/pics/7.jpg',
+  '/assets/pics/8.jpg',
+  '/assets/pics/9.jpg',
+  '/assets/pics/10.jpg',
+  '/assets/pics/11.jpg',
+];
 
 const breakpointColumnsObj = {
   default: 3,
