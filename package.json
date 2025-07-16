@@ -1,5 +1,6 @@
 {
   "name": "simarjeet-portfolio",
+  "homepage": "https://simarjeet.dev/photos",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
