@@ -15,13 +15,17 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    // For now, we'll just log it and show an alert
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      // Simulates sending form data
+      console.log('Form submitted:', formData);
+      alert('Thank you for your message! I\'ll get back to you soon.');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Something went wrong while sending your message. Please try again later.');
+    }
   };
 
   return (

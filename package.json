@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint:handle-errors": "eslint --ext .js,.jsx src --rule 'no-async-promise-executor: error' --rule 'no-floating-promises: error'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

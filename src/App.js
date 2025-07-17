@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -9,6 +9,8 @@ import Photos from './pages/Photos';
 import './App.css';
 
 function App() {
+  const [error, setError] = useState(null);
+
   return (
     <Router>
       <div className="App">
@@ -25,4 +27,5 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
+ 
