@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const Projects = () => {
   // Typewriter effect for current project
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "currently building RAAY";
+  const fullText = "currently building Cognera Health";
   const idx = useRef(0);
 
   useEffect(() => {
@@ -93,7 +93,7 @@ const Projects = () => {
                 <h2 className="text-xl md:text-xl font-extrabold text-text mb-2 flex items-center">
                   <span className="typewriter-cursor">{displayedText}</span>
                 </h2>
-                <p className="text-text-secondary text-center max-w-md">Check it out <a href='https://raay.dev' target='blank'>here</a></p>
+                <p className="text-text-secondary text-center max-w-md">Check it out <a href='https://www.cognerahealth.ai/' target='blank'>here</a></p>
               </div>
             </div>
             {/* Project List */}
