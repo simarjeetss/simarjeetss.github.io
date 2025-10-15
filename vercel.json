@@ -2,13 +2,30 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "headers": { 
+        "cache-control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*\\.(jpg|jpeg|png|gif|ico|svg))",
+      "headers": { 
+        "cache-control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*"
+      },
       "continue": true
     }
   ],
+  "trailingSlash": false,
   "images": {
     "sizes": [640, 750, 828, 1080, 1200],
     "domains": ["simarjeet.dev"],
     "minimumCacheTTL": 60
+  },
+  "build": {
+    "env": {
+      "PUBLIC_URL": "https://simarjeet.dev"
+    }
   }
 }
