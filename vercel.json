@@ -1,20 +1,30 @@
 {
-  "routes": [
+  "headers": [
     {
-      "src": "/assets/(.*)",
-      "headers": { 
-        "cache-control": "public, max-age=31536000, immutable",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "continue": true
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     },
     {
-      "src": "/(.*\\.(jpg|jpeg|png|gif|ico|svg))",
-      "headers": { 
-        "cache-control": "public, max-age=31536000, immutable",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "continue": true
+      "source": "/(.*\\.(jpg|jpeg|png|gif|ico|svg))",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     }
   ],
   "trailingSlash": false,
