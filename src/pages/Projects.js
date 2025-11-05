@@ -42,7 +42,7 @@ const Projects = () => {
       title: "Personal Spotify Data Analysis",
       description: "The Personal Spotify Data Analysis project involved analyzing 20,000+ JSON entries from Spotify's streaming history. Using R scripts, the project applied data cleaning techniques to structure the dataset and created artist transition networks to detect listening patterns.",
       // image: "/assets/spotify_analysis.png",
-      link: "https://simarjeetss-spotify-analysis.netlify.app/",
+      link: "https://spotify.simarjeet.dev",
       alt: "Spotify Analysis Project"
     },
     {
