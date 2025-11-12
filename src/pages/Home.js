@@ -10,7 +10,7 @@ const Home = () => {
           
           <div className="text-lg leading-relaxed">
             <p className="mb-6">
-              a recent MSCS from Washington State University where i specialized in AI/ML currently working at a healthcare + ai startup.
+              a recent MSCS graduate from Washington State University where i specialized in AI/ML currently working at a healthcare + ai startup.
             </p>
             
             <p className="mb-6">

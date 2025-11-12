@@ -4,20 +4,7 @@
       "source": "/assets/:path*",
       "headers": [
         {
-          "key": "cache-control",
-          "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    },
-    {
-      "source": "/:path(.*\\.(?:jpg|jpeg|png|gif|ico|svg))",
-      "headers": [
-        {
-          "key": "cache-control",
+          "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
         },
         {
@@ -30,12 +17,6 @@
   "trailingSlash": false,
   "images": {
     "sizes": [640, 750, 828, 1080, 1200],
-    "domains": ["simarjeet.dev"],
     "minimumCacheTTL": 60
-  },
-  "build": {
-    "env": {
-      "PUBLIC_URL": "https://simarjeet.dev"
-    }
   }
 }
