@@ -32,21 +32,21 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6 text-text">Skills</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 border border-border rounded-lg bg-white bg-opacity-5">
-                  <h4 className="text-lg font-semibold mb-4 text-accent">Programming Languages</h4>
+                  <h4 className="text-lg font-semibold mb-4 text-accent">Programming</h4>
                   <ul className="space-y-1">
-                    <li className="text-text-secondary text-sm">Java</li>
-                    <li className="text-text-secondary text-sm">Python</li>
                     <li className="text-text-secondary text-sm">JavaScript/TypeScript</li>
+                    <li className="text-text-secondary text-sm">Python</li>
+                    <li className="text-text-secondary text-sm">Java</li>
                   </ul>
                 </div>
                 
                 <div className="p-6 border border-border rounded-lg bg-white bg-opacity-5">
                   <h4 className="text-lg font-semibold mb-4 text-accent">Frameworks & Technologies</h4>
                   <ul className="space-y-1">
-                    <li className="text-text-secondary text-sm">Spring Boot</li>
+                    <li className="text-text-secondary text-sm">FastAPI</li>
                     <li className="text-text-secondary text-sm">React</li>
                     <li className="text-text-secondary text-sm">Node.js</li>
-                    <li className="text-text-secondary text-sm">FastAPI</li>
+                    <li className="text-text-secondary text-sm">Next.js</li>
                   </ul>
                 </div>
                 
@@ -63,20 +63,15 @@ const About = () => {
                 
                 <div className="p-6 border border-border rounded-lg bg-white bg-opacity-5">
                   <h4 className="text-lg font-semibold mb-4 text-accent">Tools & Libraries</h4>
-                  <p>currently going deep in machine learning/deep learning and LLMs</p>
+                  <p>currently going deep in classical ml/deep learning, LLMs and applied ai</p>
                 </div>
               </div>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-text">Interests</h3>
-              <p className="text-text-secondary leading-relaxed mb-4">
-                When I'm not coding, I'm passionate about music production. I create Rap/Trap/RnB beats 
-                and love experimenting with different genres and sounds. Music production helps me think 
-                creatively and brings balance to my technical work.
-              </p>
               <p className="text-text-secondary leading-relaxed">
-                I also enjoy exploring new technologies, contributing to open-source projects, and 
+                i enjoy exploring new technologies, contributing to open-source projects, and 
                 collaborating with other developers on innovative solutions.
               </p>
             </div>

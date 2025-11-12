@@ -115,12 +115,12 @@ const Projects = () => {
                         </a>
                         {project.id === 1 && (
                           <a
-                            href="https://flavorblend.tech/"
+                            href="https://flavorblend.simarjeet.dev"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-accent font-medium hover:text-accent-hover transition-colors duration-200"
                           >
-                            see project →
+                            live link →
                           </a>
                         )}
                       </div>
