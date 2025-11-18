@@ -4,31 +4,39 @@ const Home = () => {
   return (
     <main className="mt-20">
       <div className="max-w-4xl mx-auto px-8">
-        <section className="py-16">
-          <h1 className="font-monotext-5xl font-extrabold mb-14 leading-tight text-4xl">hi i am simarjeet singh 👋</h1>
-          {/* <p className="text-xl text-text-secondary mb-8 font-medium">a recent Computer Science graduate</p> */}
-          
+        <section className="py-8">
+          <h1 className="font-monotext-5xl font-extrabold mb-9 leading-tight text-4xl">hi, i am simarjeet!</h1>
           <div className="text-lg leading-relaxed">
-            <p className="mb-6">
-              a recent MSCS graduate from Washington State University where i specialized in AI/ML currently working at a healthcare + ai startup.
+            <p className="mb-2">
+              i am a recent mscs graduate (may 2025) from washington state university.
             </p>
             
-            <p className="mb-6">
-              dreaming up cool ideas and making them come true is where my passion lies. 
-              I am enthusiastic about building applications that help myself and others to be more productive 
-              and enjoy the process of crafting. You can check out my projects <a href="/projects" className="text-accent hover:text-accent-hover">here</a>.
+            <p className="mb-10">
+              mainly work on backend, applied ai and LLMs.
             </p>
             
-            <p className="mb-6">
-              outside of programming, I enjoy music production and creating beats. 
-              I love experimenting with different genres and sounds. Also, in case you are interested, 
-              here is <a href="/about" className="text-accent hover:text-accent-hover">more about me</a>.
-            </p>
-            
-            <p className="mb-6">
-              I'm currently based in Seattle, Washington, if you're around, please reach out and let's have some coffee or work together.
-            </p>
+            <h2 className="text-2xl font-semibold mb-6 text-text">experience</h2>
+            <ul className="list-disc ml-6 mb-8">
+            <li className="mb-2">software engineer @ cognera health (sept 2025 - present)</li>
+            <li className="mb-2">software engineer @ winsun green (jan 2023 - dec 2023)</li>
+            <li className="mb-2">intern @ cactus communications (may 2022 - aug 2022)</li>
+            </ul>
           </div>
+          
+          <h2 className="text-2xl font-semibold mb-6 text-text">projects</h2>
+          <ul className="list-disc ml-6 mb-8">
+            <li className="mb-2">
+              <a href="https://flavorblend.simarjeet.dev" target="_blank" rel="noopener noreferrer">flavorblend</a> (hackathon winner)
+            </li>
+            <li className="mb-2">
+              <a href="https://spotify.simarjeet.dev" target="_blank" rel="noopener noreferrer">spotify analysis</a>
+            </li>
+            <li className="mb-2">
+              <a href="https://github.com/simarjeetss/network-security-pipeline" target="_blank" rel="noopener noreferrer">phishing detection pipeline</a>
+            </li>
+            <li className="mb-2"> more <a href="/projects" rel="noopener noreferrer">here</a>
+            </li>
+          </ul>
         </section>
       </div>
     </main>

@@ -3,19 +3,9 @@ import Masonry from 'react-masonry-css';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-// Use absolute paths which work consistently across environments
 const images = [
-  '/assets/pics/1.jpg',
-  '/assets/pics/2.jpg',
-  '/assets/pics/3.jpg',
-  '/assets/pics/4.jpg',
-  '/assets/pics/5.jpg',
-  '/assets/pics/6.jpg',
-  '/assets/pics/7.jpg',
-  '/assets/pics/8.jpg',
-  '/assets/pics/9.jpg',
-  '/assets/pics/10.jpg',
-  '/assets/pics/11.jpg'
+  'https://res.cloudinary.com/dhpsavjod/image/upload/v1762931303/1_m0idlh.jpg',
+  'https://res.cloudinary.com/dhpsavjod/image/upload/v1762931303/10_ycur22.jpg'
 ];
 
 const breakpointColumnsObj = {
@@ -32,7 +22,10 @@ const Photos = () => {
 
   return (
     <div style={{ maxWidth: '1000px', margin: '2em auto' }}>
-      <h2 style={{ marginTop: '2em', textAlign: 'center', marginBottom: '1em', fontWeight: 600 }}>random photos :)</h2>
+      <h2 style={{ marginTop: '2em', textAlign: 'center', marginBottom: '1em', fontWeight: 600 }}>
+        random photos :)
+      </h2>
+
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
@@ -59,6 +52,7 @@ const Photos = () => {
           />
         ))}
       </Masonry>
+
       <Lightbox
         open={open}
         close={() => setOpen(false)}
