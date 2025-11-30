@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-bg z-50">
       <div className="max-w-4xl mx-auto px-8 flex justify-between items-center h-15">
-        <Link to="/" className="font-bold text-xl text-text">home</Link>
+        <Link to="/" className="font-bold text-xl text-text m-4">home</Link>
         <div className="flex items-center gap-8">
           
           {/* <Link to="/projects" className="text-text-secondary font-medium transition-colors duration-200 hover:text-accent">projects →</Link> */}
