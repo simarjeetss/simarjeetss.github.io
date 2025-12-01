@@ -51,6 +51,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* test statement */}
     </nav>
   );
 };
