@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex gap-2">
             <button 
               onClick={toggleTheme}
-              className={`h-8 w-8 rounded-full cursor-pointer transition-all duration-200 border-2 border-border bg-transparent flex items-center justify-center text-base hover:scale-110 hover:border-accent ${theme === 'light' ? 'bg-accent text-white' : ''}`}
+              className={`h-8 w-8 m-2 rounded-full cursor-pointer transition-all duration-200 border-2 border-border bg-transparent flex items-center justify-center text-base hover:scale-110 hover:border-accent ${theme === 'light' ? 'bg-accent text-white' : ''}`}
               title={theme === 'light' ? 'Switch to Dark' : 'Switch to Light'}
             >
               {theme === 'light' ? '☀️' : '🌙'}
