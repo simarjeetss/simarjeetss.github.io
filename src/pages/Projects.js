@@ -34,8 +34,7 @@ const Projects = () => {
       title: "AgAid Digital Hackathon - Snowpack Prediction Challenge",
       // description: "Built an AI-powered tool to predict Snow Water Equivalent (SWE) with 87.8% accuracy, helping improve water resource planning in the Western U.S. We processed over 9 million rows of weather and location data and created a web app using React and FastAPI where users can upload CSV files and see interactive SWE predictions. The project placed in the top 3 and earned an Honorable Mention for its innovation",
       // image: "/assets/flavorblend.png",
-      link: "https://www.linkedin.com/feed/update/urn:li:activity:7293512514611335172/",
-      alt: "FlavorBlend Project"
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7292674914677833728/",
     },
     // {
     //   id: 3,
