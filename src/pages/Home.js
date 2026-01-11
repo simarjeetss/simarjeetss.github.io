@@ -8,16 +8,17 @@ const Home = () => {
           <h1 className="font-monotext-5xl font-extrabold mb-9 leading-tight text-2xl">hi, i am simarjeet!</h1>
           <div className="text-lg leading-relaxed">
             <p className="mb-2">
-              i am a recent mscs graduate (may 2025) from washington state university.
+              i am a Founding Engineer working at <a href="https://cognerahealth.ai" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">cognera health</a>.
             </p>
             
             <p className="mb-10">
-              mainly work on backend, applied ai and LLMs.
+              working on backend, cloud infrastructure, and applied ai.
             </p>
             
             <h2 className="text-xl font-semibold mb-6 text-text">experience</h2>
             <ul className="list-disc ml-6 mb-8">
-            <li className="mb-2">software engineer @ cognera health (sept 2025 - present)</li>
+            <li className="mb-2">founding engineer @ cognera health (june 2025 - present)</li>
+            <li className="mb-2">software engineering intern @ raay (apr 2025 - may 2025)</li>
             <li className="mb-2">software engineer @ winsun green (jan 2023 - dec 2023)</li>
             <li className="mb-2">intern @ cactus communications (may 2022 - aug 2022)</li>
             </ul>
